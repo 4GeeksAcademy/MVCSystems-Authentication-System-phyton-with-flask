@@ -1,3 +1,176 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+
+.custom-btn {
+  background: linear-gradient(45deg, #1e3c72, #2a5298, #1e3c72);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.bg-custom,
+.custom-btn:hover {
+  background: linear-gradient(45deg, #2a5298, #1e3c72, #2a5298);
+  transform: scale(1.05);
+}
+
+.custom-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-input {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.custom-input:focus {
+  border-color: #1e3c72;
+  outline: none;
+}
+
+.custom-alert {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.custom-alert-danger {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.custom-badge {
+  background: #1e3c72;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.custom-badge-primary {
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.custom-badge-secondary {
+  background: #6c757d;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Additional Styles */
+
+.custom-navbar {
+  background: #1e3c72;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-footer {
+  background: #2a5298;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.custom-table th {
+  background-color: #1e3c72;
+  color: white;
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.custom-modal {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.custom-modal-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.custom-modal-footer {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.custom-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.custom-tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #1e3c72;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the text */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.custom-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
