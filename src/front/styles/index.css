@@ -14,10 +14,14 @@
 
 .bg-custom,
 .custom-btn:hover {
-  background: linear-gradient(45deg, #2a5298, #1e3c72, #2a5298);
+  background: linear-gradient(
+    45deg,
+    #6a11cb,
+    #2575fc,
+    #6a11cb
+  ); /* Colores degradados de púrpura a azul */
   transform: scale(1.05);
 }
-
 .custom-card {
   background: #f8f9fa;
   border-radius: 10px;
